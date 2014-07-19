@@ -39,7 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Infrastructure\IAccountRepository.cs" />
+    <Compile Include="Infrastructure\ITransactionRepository.cs" />
+    <Compile Include="Model\Account.cs" />
+    <Compile Include="Repositories\TransactionRepository.cs" />
+    <Compile Include="Services\AccountantService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
