@@ -12,7 +12,7 @@ namespace Banker.Domain.Test
             //تجهيز
             var accRepoFake = A.Fake<IAccountsRepository>();
             A.CallTo(() => accRepoFake.Get(1)).Returns(
-                new Account()
+                new Account
                 {
                     Balance = 500
                 });
@@ -39,7 +39,7 @@ namespace Banker.Domain.Test
             var transRepoFake = A.Fake<ITransactionsRepository>();
             var sut = new AccountantService(accRepoFake,transRepoFake);
             //تنفيذ
-            var result = sut.Deposit(1, 1000);
+            sut.Deposit(1, 1000);
             //تحقق
             A.CallTo(() =>
                accRepoFake.Update(account)).MustHaveHappened(Repeated.Exactly.Once);
@@ -53,7 +53,7 @@ namespace Banker.Domain.Test
             var transRepoFake = A.Fake<ITransactionsRepository>();
             var sut = new AccountantService(accRepoFake, transRepoFake);
             //تنفيذ
-            var result = sut.Deposit(1, 1000);
+            sut.Deposit(1, 1000);
             //تحقق
             A.CallTo(() =>
                transRepoFake.Create(1,1000)).MustHaveHappened(Repeated.Exactly.Once);
