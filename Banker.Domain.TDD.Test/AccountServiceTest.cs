@@ -26,7 +26,7 @@ namespace Banker.Domain.TDD.Test
         [Test]
         public void Deduct_balance_by_withdrawn_amount()
         {
-            var accountRepo = A.Fake<IAccountRepository>();
+            var accountRepo = A.Fake<IAccountsRepository>();
             var transactionRepo = A.Fake<ITransactionRepository>();
 
             //افترض وجود حساب لعميل
@@ -53,7 +53,7 @@ namespace Banker.Domain.TDD.Test
         [Test]
         public void Create_transaction_to_register_withdrawal_action()
         {
-             var accountRepo = A.Fake<IAccountRepository>();
+             var accountRepo = A.Fake<IAccountsRepository>();
             var transactionRepo = A.Fake<ITransactionRepository>();
             //افترض وجود حساب لعميل
             int accountId = 1;
