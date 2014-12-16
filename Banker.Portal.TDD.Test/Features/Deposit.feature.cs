@@ -19,20 +19,21 @@ namespace Banker.Portal.TDD.Test.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("تجربة لخاصية")]
-    public partial class تجربةلخاصيةFeature
+    [NUnit.Framework.DescriptionAttribute("Deposit")]
+    public partial class DepositFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "Depit.feature"
+#line 1 "Deposit.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("ar-SA"), "تجربة لخاصية", "", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Deposit", "In order to avoid silly mistakes\r\nAs a math idiot\r\nI want to be told the sum of t" +
+                    "wo numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -65,22 +66,14 @@ namespace Banker.Portal.TDD.Test.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("إضافة رقمين")]
+        [NUnit.Framework.DescriptionAttribute("deposit certain amount to account successfully")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void إضافةرقمين()
+        public virtual void DepositCertainAmountToAccountSuccessfully()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("إضافة رقمين", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("deposit certain amount to account successfully", new string[] {
                         "mytag"});
-#line 5
-this.ScenarioSetup(scenarioInfo);
-#line 6
-testRunner.Given("فرضية", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "بفرض ");
 #line 7
- testRunner.When("اضغط اضافة", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "عندما ");
-#line 8
-testRunner.And("أدخل دخل", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "و ");
-#line 9
-testRunner.Then("سأجد ناتج", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "اذاً ");
+this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }

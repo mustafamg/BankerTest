@@ -83,10 +83,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Accont_Details_by_id.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\Depit.feature.cs">
+    <Compile Include="Features\Deposit.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Depit.feature</DependentUpon>
+      <DependentUpon>Deposit.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Withdraw.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Withdraw.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\GetAccontDetailsByAccountIdSteps.cs" />
@@ -97,9 +102,13 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Accont_Details_by_id.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\Depit.feature">
+    <None Include="Features\Deposit.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Depit.feature.cs</LastGenOutput>
+      <LastGenOutput>Deposit.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Withdraw.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Withdraw.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
